@@ -27,7 +27,7 @@ function crearGaleria() {
 }  
 
 function Imagen(id) {
-
+   
   const currentScrollPosition = window.scrollY;
 
   const imagen = document.createElement('picture');
