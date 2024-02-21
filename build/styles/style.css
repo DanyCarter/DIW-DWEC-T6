@@ -1,53 +1,164 @@
-*{
- margin: 0;
- 
+@font-face {
+  font-family: 'Polar';
+  src: url(/build/assets/fonts/Polar\ Snow.otf);
 }
 
-body, html{
-margin: 0 auto;
-display: flex;
-
+@font-face {
+  font-family: 'Kei';
+  src: url(/build/assets/fonts/Snow\ Kei.ttf);
 }
 
-.video{
-    margin: 0  auto;
+@font-face {
+  font-family: 'Snowby';
+  src: url(/build/assets/fonts/Snowby.ttf);
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a8c9d1;
+  }
+
+  html{
     width: 100%;
     height: 100%;
-
-}
-
-.overlay{
-    width: 50rem;
-    height: 75rem;
-    margin: auto;
+  }
+  
+  .menu {
+    height: 2rem;
     padding: 2rem;
-}
-
-.videoContainer{
-    width: 100%;
-    padding: auto;
-
-}
-
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    margin: 0 auto;
-    left: 50%;
-    top: 50%;
-    bottom: 50%;
-}
-
-.galery{
     display: flex;
-    margin: auto;
+    background: linear-gradient(to bottom, #0099ff, transparent);
+    justify-content: flex-end;
+    align-items: center;
     gap: 2rem;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .video {
+    position: relative;
+    width: 100%;
+    height: 60rem;
+  }
 
-}
+  .logo{
+    margin-left: 0;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    left: 25rem;
+  }
 
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+  .contenedor-video {
+    color: rgb(215, 214, 214);
+    text-align: center;
+  }
+
+  .contenedor-video h1{
+    font-family: Polar;
+    font-size: 150px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .video video {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .galery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; 
+    background: rgb(58, 2, 58);
+    flex-direction: column;
+  }
+
+  h2{
+    font-family: Kei;
+    font-size: 25px;
+    text-align: center;
+    margin: 2rem;
+  } 
+
+  .galeriaImagenes {
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  }
+  
+  .galeriaImagenes picture {
+    margin: 0 auto;
+  }
+
+
+  .site-footer {
+    background: linear-gradient(to top, #0099ff, transparent);
+    padding: 2rem;
+    color: #0226f0; 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 4rem;
     font-weight: bold;
-}
+  }
+  
+  .stay-body {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    display: flex;
+    top: 0;
+  }
+  
+  .imagen-grande img {
+    width: 50rem;
+    height: 30rem;
+  }
+  
+  .button-close {
+    position: absolute;
+    cursor: pointer;
+    top: 12px;
+    color: red;
+    right: 12px;
+  }
+  
+  @media (max-width: 1200px) {
+    .galeriaImagenes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 770px) {
+    .galeriaImagenes {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .galeriaImagenes {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
