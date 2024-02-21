@@ -1,0 +1,53 @@
+*{
+ margin: 0;
+ 
+}
+
+body, html{
+margin: 0 auto;
+display: flex;
+
+}
+
+.video{
+    margin: 0  auto;
+    width: 100%;
+    height: 100%;
+
+}
+
+.overlay{
+    width: 50rem;
+    height: 75rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+.videoContainer{
+    width: 100%;
+    padding: auto;
+
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+}
+
+.galery{
+    display: flex;
+    margin: auto;
+    gap: 2rem;
+
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
